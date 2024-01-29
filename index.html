@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danish Gym</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: rgb(70, 7, 7);
+        margin: 0px;
+        padding: 0px;
+        background: url('img/dumble.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 136px;
+        filter: invert(100px);
+    }
+
+    .mid {
+        display: block;
+        width: 43%;
+        margin: 2px auto;
+        padding: 2px 2px;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: rgb(173, 232, 36);
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: yellow;
+        background-color: blue;
+        padding: 2px 4px;
+        border: 2px solid green;
+        border-radius: 10px;
+        font-size: 23px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(28, 26, 26);
+    }
+
+    .container {
+        border: 2px solid red;
+        margin: 50px 70px;
+        padding: 30px 111px;
+        border-radius: 30px;
+        width: 33%;
+    }
+
+    .container h3 {
+        text-align: center;
+        text-decoration: bold;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 550px;
+        border: 2px solid black;
+        padding: 1px;
+        margin: 3px auto;
+        font-size: 25px;
+        border-radius: 12px;
+    }
+
+    .form-group button {
+        text-align: center;
+        width: 550px;
+        border: 2px solid black;
+        padding: 1px;
+        margin: 3px auto;
+        font-size: 25px;
+        border-radius: 12px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/weight.png" alt="Danish blogs">
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">E-Mail Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>Join the Best Gym in Delhi</h3>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Please Enter Your Name">
+                <input type="text" name="" placeholder="Please Enter Your Age">
+                <input type="text" name="" placeholder="Please Enter Your Gender">
+                <input type="text" name="" placeholder="Please Enter Your Locality">
+                <button class="btn1">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
